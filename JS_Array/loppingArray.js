@@ -31,3 +31,33 @@ console.log(newPrice);
 //converting array into string
 let arr=["leena","mondal"];
 console.log(arr.toString());
+
+//map function to create new array
+let name=["leena","barnali","sayatika"];
+let newAr=name.map((val)=>{
+    return val;
+});
+console.log(newAr);
+
+// filterfunction
+let number=[2,7,8,4,3,6];
+let even=number.filter((el)=>{
+    return el%2==0;
+});
+console.log(even);
+
+// reduce
+let sum=number.reduce((pre,curr)=>{
+    return pre+curr;
+
+});
+console.log(sum);
+
+// practice
+
+let num=prompt("enter a number");
+let numarr=[];
+for(let i=0;i<num;i++){
+    numarr.push(i);
+}
+console.log(numarr);
