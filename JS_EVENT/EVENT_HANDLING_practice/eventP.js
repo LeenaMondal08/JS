@@ -1,7 +1,13 @@
-let btn=document.querySelector("button");
-btn.addEventListener("onclick",()=>{
-    btn.style.backgroundColor="black";
-})
-btn.addEventListener("onclick",()=>{
-    btn.style.backgroundColor="white";
-})
+let btn=document.querySelector("#mode");
+let currMode="light";
+btn.addEventListener("click",()=>{
+    if(currMode==="light"){
+    currMode="dark";
+    document.querySelector("body").style.backgroundColor="black";
+    }
+    else{
+    currMode="light";
+    document.querySelector("body").style.backgroundColor="white";
+    }
+    console.log(currMode);
+});
