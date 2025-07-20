@@ -6,7 +6,7 @@ let promise1=new Promise((resolv,reject)=>{
     console.log("i am a pomise");
     reject("some error");
 });
-
+ 
 function getData(dataId,getNextData){
     return new Promise((resolv,reject)=>{
         setTimeout(() => {
